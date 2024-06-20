@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>TIC TAC TOE</h1>
+    <p class="player">Current player: <span class="current-player"></span></p>
+    <div class="grid-container" id="gameboard"></div>
+    <button class="restart">restart game</button>
+
+    <!-- Modal Structure -->
+    <div id="winnerModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="winnerMessage"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

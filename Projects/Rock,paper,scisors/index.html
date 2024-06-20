@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class ="selection">
+    <button class ="buttonRock">Rock</button>
+    <button class ="buttonPaper">Paper</button>
+    <button class ="buttonScisors">Scisors</button>
+</div>
+<div class ="score">
+    <p>Human Score: <span class="humanScore">0</span></p>
+    <p>Computer Score: <span class="computerScore">0</span></p>
+</div>
+
+
+<style>
+
+    body {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+    }
+
+.selection {
+    display:flex;
+    flex-direction: row;
+    gap: 2.4rem;
+}
+
+
+</style>
+<script src = "script.js"></script>
+</body>
+</html>
