@@ -1,11 +1,57 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="output.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      dialog {
+        display: none;
+        border: none;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      dialog::backdrop {
+        background: rgba(0, 0, 0, 0.4);
+      }
+    </style>
   </head>
-  <body>
-    <!-- <div class="p-4 bg-blue-500 text-white">Hello, Tailwind!</div> -->
+  <body class="flex flex-col justify-start mt-60 items-center min-h-screen">
+    <div class="items-start" data-container>
+      <h1
+        data-title
+        class="justify-start text-left text-3xl font-bold text-black mb-6 px-2"
+      >
+        Inbox
+      </h1>
 
-    <h1 class="bg-blue-200">Hey</h1>
+      <div
+        data-task
+        class="text-black text-base font-sans font-normal px-2 mb-6"
+      >
+        <ul></ul>
+      </div>
+
+      <!-- New Task -->
+      <div class="justify-star" data-new-task>
+        <hr class="bg-gray-100 mb-3 w-80" />
+        <div data-task-selection class="px-2 py-2 hover:bg-gray-50 rounded-md">
+          <button
+            class="bg-orange-400 hover:bg-orange-500 text-white font-bold h-8 w-8 border border-orange-500 rounded"
+            data-add-new-task
+          >
+            +</button
+          ><span class="text-gray-400 mx-4 text-base">Add Task..</span>
+            <div>
+              
+            </div>
+            <button data-close-modal>Close</button>
+          </dialog>
+        </div>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>

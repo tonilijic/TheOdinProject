@@ -23,5 +23,5 @@ build/
 # macOS system files
 .DS_Store
 
-# javascript exercises
-Learnings/OdinProject/javascript-exercises
+# Ignore javascript exercises
+javascript-exercises/
