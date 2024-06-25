@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Document</title>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-slate-50">
+    <div data-weather-box
+        class=" bg-white drop-shadow-sm p-4 rounded-full border-gray-200 border-2 overflow-hidden flex flex-col items-center transition ease-in">
+        <div data-search-box class="flex items-center">
+            <input data-search-input
+                class="appearance-none focus:outline-none bg-slate-100 hover:bg-gray-200 rounded-full mr-2 px-2.5 py-1 "
+                type="text" placeholder="Enter Location..." /><button data-search-button
+                class="fas fa-search bg-[#18B5ED] text-blue-100 text-base p-2 rounded-full flex items-center justify-center transition ease-in-out hover:text-white hover:bg-[#4a84b7] focus:outline-none disabled:bg-gray-200 disabled:text-gray-500"></button>
+        </div>
+        <img data-weather-image class="size-32 rounded-md m-8 transition-transform ease-in scale-0 opacity-0 hidden"
+            src="" />
+        <div data-weather-temperature class="flex w-full justify-center text-3xl font-semibold"></div>
+        <div data-extrainfo class="inline-flex justify-between items-stretch w-4/5 transition ease-in opacity-0 hidden">
+            <div class="info-box flex flex-col items-center">
+                <i class="fas fa-wind text-sm mb-2"></i>
+                <div data-weather-wind class="text-xs text-slate-400">wind</div>
+            </div>
+            <div class="info-box flex flex-col">
+                <i class="fas fa-water text-sm mb-2 items-center"></i>
+                <div data-weather-rain class="text-xs text-slate-400">rain</div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
